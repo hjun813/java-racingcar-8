@@ -16,4 +16,18 @@ public class CarTest {
         assertThatThrownBy(() -> new Car("hyunjun")).isInstanceOf(IllegalAccessException.class);
     }
 
+    @Test
+    void 자동차_전진_테스트_4이상(){
+        Car car = new Car("hjun");
+        car.move(4);
+        assertThat(car.getPosition()).isEqualTo(1);
+    }
+
+    @Test
+    void 자동차_전진_테스트_3이하(){
+        Car car = new Car("hjun");
+        car.move(3);
+        assertThat(car.getPosition()).isEqualTo(0);
+    }
+
 }
