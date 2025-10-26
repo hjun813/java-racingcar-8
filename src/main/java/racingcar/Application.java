@@ -25,6 +25,7 @@ public class Application {
         }
         catch (IllegalArgumentException e){
             System.err.println("[오류] " + e.getMessage());
+            throw e;
         }
     }
 }
