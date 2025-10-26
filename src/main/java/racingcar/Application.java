@@ -13,6 +13,7 @@ public class Application {
 
             RacingGame game = new RacingGame(carNamesInput);
 
+            System.out.println();
             System.out.println("실행 결과");
             for(int i = 0; i< count; i++){
                 game.runRound();
